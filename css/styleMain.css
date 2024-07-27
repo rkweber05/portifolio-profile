@@ -1,0 +1,126 @@
+:root {
+    --background-color-logo: #020202;
+    --color-main: rgb(41, 88, 243);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color-logo);
+    padding: 12px;
+    position: fixed;
+
+    .header-img img{
+        margin-left: 200px;
+        width: 120px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .header-nav__ul {
+        display: flex;
+        gap: 125px;
+        margin-right: 180px;
+    }
+
+    .header-nav__ul li {
+        list-style-type: none;
+        background-color: #1b1b1b;
+        box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
+        padding: 12px 22px;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color .7s linear;
+    }
+
+    .header-nav__ul li:nth-child(1) {
+        background-color: var(--color-main);
+        box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .header-nav__ul li:nth-child(1):hover {
+        box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .header-nav__ul li:hover {
+        background-color: var(--color-main);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .header-nav__ul a {
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+main  {
+    min-height: 100vh;
+    background-image: linear-gradient(var(--color-main), var(--background-color-logo));
+    padding: 165px 65px;
+    display: flex;
+
+    .content-one {
+        padding: 16px 20px;
+        font-size: 38px;
+        letter-spacing: 10px;
+    }
+
+    .title-main {
+        padding: 16px 20px;
+        font-size: 38px;
+        letter-spacing: 10px;
+        margin-left: 80px;
+    }
+
+    .content-two {
+        padding: 16px 20px;
+        font-size: 38px;
+        letter-spacing: 10px;
+        margin-left: 140px;
+    }
+
+    .content-main {
+        padding: 16px 20px;
+        font-size: 30px;
+        margin-left: 140px;
+        letter-spacing: 2px;
+        width: 50%;
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    .content-main__imgProfile {
+        padding-left: 80px;
+    }
+
+    .content-main__imgProfile img {
+        height: 40%;
+        border-radius: 8px;
+    }
+
+    .content-main__about-img {
+        width: 100px;
+        height: 25px;
+    }
+
+    .content-main__about {
+        position: relative;
+        
+    }
+
+    .content-main__about-img {
+        position: absolute;
+        top: 0;
+        right: 480px;
+    }
+    .content-main__about-img img {
+        width: 430px;
+        border-radius: 8px;
+        box-shadow: 1px 6px 16px rgba(255, 255, 255, 0.5);
+    }
+}
