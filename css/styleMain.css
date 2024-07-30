@@ -1,6 +1,6 @@
 :root {
-    --background-color-logo: #020202;
-    --color-main: rgb(41, 88, 243);
+    --background-color-logo: #181515;
+    --color-main: #2ECC71;
 }
 
 header {
@@ -23,11 +23,13 @@ header {
         display: flex;
         gap: 125px;
         margin-right: 180px;
+        color: black;
     }
 
     .header-nav__ul li {
         list-style-type: none;
         background-color: #1b1b1b;
+        color: black;
         box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
         padding: 12px 22px;
         border-radius: 8px;
@@ -35,22 +37,35 @@ header {
         width: 100%;
         transition: background-color .7s linear;
     }
+   
 
     .header-nav__ul li:nth-child(1) {
         background-color: var(--color-main);
+        color: black;
         box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
     }
 
     .header-nav__ul li:nth-child(1):hover {
         box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
+        color: black;
     }
 
     .header-nav__ul li:hover {
         background-color: var(--color-main);
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5);
+        color: black;
+    }
+
+    .header-nav__ul li:hover a {
+        color: black;
+    }
+
+    .header-nav__ul .home-required a {
+        color: black;
     }
 
     .header-nav__ul a {
+        letter-spacing: 2px;
         list-style-type: none;
         color: white;
         text-decoration: none;
@@ -60,7 +75,7 @@ header {
 
 main  {
     min-height: 100vh;
-    background-image: linear-gradient(var(--color-main), var(--background-color-logo));
+    background: linear-gradient(white,#2ECC71 120%);
     padding: 165px 65px;
     display: flex;
 
@@ -88,7 +103,8 @@ main  {
         padding: 16px 20px;
         font-size: 30px;
         margin-left: 140px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+        line-height: 1.6;
         width: 50%;
         font-weight: bold;
         text-align: justify;
@@ -118,6 +134,7 @@ main  {
         top: 0;
         right: 480px;
     }
+
     .content-main__about-img img {
         width: 430px;
         border-radius: 8px;
